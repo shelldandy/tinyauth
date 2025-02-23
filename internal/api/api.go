@@ -247,7 +247,6 @@ func (api *API) SetupRoutes() {
 
 		// Bind JSON
 		err := c.BindJSON(&login)
-
 		// Handle error
 		if err != nil {
 			log.Error().Err(err).Msg("Failed to bind JSON")
