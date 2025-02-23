@@ -77,6 +77,7 @@ var rootCmd = &cobra.Command{
 			TailscaleClientSecret: config.TailscaleClientSecret,
 			GenericClientId:       config.GenericClientId,
 			GenericClientSecret:   config.GenericClientSecret,
+			GenericLabel:          config.GenericLabel,
 			GenericScopes:         strings.Split(config.GenericScopes, ","),
 			GenericAuthURL:        config.GenericAuthURL,
 			GenericTokenURL:       config.GenericTokenURL,
