@@ -33,10 +33,6 @@ export const LoginPage = () => {
     (value) => value !== "username",
   );
 
-  if (isLoggedIn) {
-    return <Navigate to="/logout" />;
-  }
-
   const schema = z.object({
     username: z.string(),
     password: z.string(),
@@ -104,6 +100,10 @@ export const LoginPage = () => {
       }, 500);
     },
   });
+
+  if (isLoggedIn) {
+    return <Navigate to="/logout" />;
+  }
 
   const handleSubmit = (values: FormValues) => {
     loginMutation.mutate(values);
