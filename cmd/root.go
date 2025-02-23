@@ -195,6 +195,7 @@ func init() {
 	viper.BindEnv("generic-client-id", "GENERIC_CLIENT_ID")
 	viper.BindEnv("generic-client-secret", "GENERIC_CLIENT_SECRET")
 	viper.BindEnv("generic-client-secret-file", "GENERIC_CLIENT_SECRET_FILE")
+	viper.BindEnv("generic-label", "GENERIC_LABEL")
 	viper.BindEnv("generic-scopes", "GENERIC_SCOPES")
 	viper.BindEnv("generic-auth-url", "GENERIC_AUTH_URL")
 	viper.BindEnv("generic-token-url", "GENERIC_TOKEN_URL")

@@ -44,6 +44,7 @@ type Config struct {
 	GenericClientId           string `mapstructure:"generic-client-id"`
 	GenericClientSecret       string `mapstructure:"generic-client-secret"`
 	GenericClientSecretFile   string `mapstructure:"generic-client-secret-file"`
+	GenericLabel              string `mapstructure:"generic-label"`
 	GenericScopes             string `mapstructure:"generic-scopes"`
 	GenericAuthURL            string `mapstructure:"generic-auth-url"`
 	GenericTokenURL           string `mapstructure:"generic-token-url"`
@@ -83,6 +84,7 @@ type OAuthConfig struct {
 	TailscaleClientSecret string
 	GenericClientId       string
 	GenericClientSecret   string
+	GenericLabel          string
 	GenericScopes         []string
 	GenericAuthURL        string
 	GenericTokenURL       string
