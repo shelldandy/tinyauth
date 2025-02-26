@@ -342,6 +342,7 @@ func (api *API) SetupRoutes() {
 				"isLoggedIn":          false,
 				"oauth":               false,
 				"provider":            "",
+				"genericLabel":        "",
 				"configuredProviders": configuredProviders,
 				"disableContinue":     api.Config.DisableContinue,
 			})
@@ -358,6 +359,7 @@ func (api *API) SetupRoutes() {
 			"isLoggedIn":          userContext.IsLoggedIn,
 			"oauth":               userContext.OAuth,
 			"provider":            userContext.Provider,
+			"genericLabel":        userContext.GenericLabel,
 			"configuredProviders": configuredProviders,
 			"disableContinue":     api.Config.DisableContinue,
 		})
